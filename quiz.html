@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Quiz</title>
+     <link rel="stylesheet" href="style.css">
+     
+</head>
+<body>
+  <header>
+    <h1>Learn English - Quiz</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="quiz.html">Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Mini Quiz: Test Your Knowledge</h2>
+
+      <form id="quizForm">
+        <div class="question">
+          <p>1. What is "Bonjour" in English?</p>
+          <input type="radio" name="q1" value="Hello" /> Hello<br />
+          <input type="radio" name="q1" value="Goodbye" /> Goodbye<br />
+          <input type="radio" name="q1" value="Please" /> Please
+        </div>
+
+        <div class="question">
+          <p>2. What color is "Vert"?</p>
+          <input type="radio" name="q2" value="Green" /> Green<br />
+          <input type="radio" name="q2" value="Red" /> Red<br />
+          <input type="radio" name="q2" value="Black" /> Black
+        </div>
+
+        <div class="question">
+          <p>3. How do you say “Three” in French?</p>
+          <input type="radio" name="q3" value="Trois" /> Trois<br />
+          <input type="radio" name="q3" value="Quatre" /> Quatre<br />
+          <input type="radio" name="q3" value="Cinq" /> Cinq
+        </div>
+
+        <div class="question">
+          <p>4. What number is “Umunani”?</p>
+          <input type="radio" name="q4" value="Eight" /> Eight<br />
+          <input type="radio" name="q4" value="Six" /> Six<br />
+          <input type="radio" name="q4" value="Ten" /> Ten
+        </div>
+
+        <div class="question">
+          <p>5. What is “Good evening” in French?</p>
+          <input type="radio" name="q5" value="Bonsoir" /> Bonsoir<br />
+          <input type="radio" name="q5" value="Bonne nuit" /> Bonne nuit<br />
+          <input type="radio" name="q5" value="Bon matin" /> Bon matin
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Submit Answers</button>
+      </form>
+
+      <p id="result"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Learn English App - Created by Berinka</p>
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
