@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lesson 1:Greetings</title>
     <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
 
 </head>
 <body>
@@ -44,6 +46,23 @@
   </footer>
 
     
-  <script src="script.js"></script>
+ <script>
+
+  let myheader = 'i m a header'
+  let myparagraphe = 'I m a paragraphe'
+
+  let mydiv = document.createElement('div')
+  let newtitle = document.createElement('h3')
+   let newparagraphe = document.createElement('p')
+
+   newtitle.textContent = myheader
+   newparagraphe.textcontent = myparagraphe
+
+   mydiv.appendChild(newtitle)
+   mydiv.appendChild(newparagraphe)
+   let body = document.querySelector('body')
+   body.appendChild(mydiv)
+   </script>
+
 </body>
 </html>
